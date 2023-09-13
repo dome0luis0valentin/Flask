@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}Título predeterminado{% endblock %}</title>
+</head>
+<body>
+    <header>
+        {% block header %}{% endblock %}
+    </header>
+    
+    <nav>
+        {% block nav %}{% endblock %}
+    </nav>
+<br>
+<br>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+
+    <aside>
+        {% block sidebar %}{% endblock %}
+    </aside>
+
+    <footer>
+        {% block footer %}{% endblock %}
+    </footer>
+</body>
+</html>
+
