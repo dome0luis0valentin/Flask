@@ -1,0 +1,30 @@
+{% extends 'plantilla.html' %} 
+
+{% block title%}
+{{ titulo | upper }}
+{%  endblock%}
+
+{% block header %}
+<h2> Cómo poder calmar tus pensamientos, para una vida plena, llena de felicidad</h2>
+{% endblock %}
+{% block content%}
+	<ul>
+	{% for nombre in nombres  | reverse %}
+		<li> {{nombre | lower }} </li>
+		<li> {{nombre | fun_decoradora }} </li>
+		<br>
+		<li>Sting Sensurado: {{ censu(nombre) }}</li>
+
+
+	{% endfor %}
+	</ul>
+{% endblock %}
+
+{% block sidebar %}
+Lado bar
+{% endblock %}
+
+
+
+
+

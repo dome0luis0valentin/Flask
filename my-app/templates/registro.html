@@ -1,0 +1,27 @@
+{% extends 'plantilla.html' %}
+
+{% block title %}
+Recibir nuevo integrante
+{% endblock %}
+{% block header %}
+Estamos complacidos de que te unas a este maravilloza comunidad
+{% endblock header %}
+
+
+{% block content %}
+	<h2>Soy Valentin, tu eres?   </h2>
+<form method="POST" action="/registro">
+        {{ form.hidden_tag() }}
+        <div>
+            {{ form.username.label }}
+            {{ form.username(size=20) }}
+        </div>
+        <div>
+            {{ form.password.label }}
+            {{ form.password(size=20) }}
+        </div>
+        <div>
+            {{ form.submit }}
+        </div>
+    </form>
+{% endblock %}

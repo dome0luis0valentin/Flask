@@ -1,0 +1,26 @@
+{% extends 'plantilla.html' %}
+{% block content %}
+<body>
+    <h1>Enlaces</h1>
+    
+    <p>Enlaces generados con Flask:</p>
+    <ul>
+        <li><a href="{{ url_for('hello') }}">Página de inicio</a></li>
+        <li><a href="{{ url_for('home', name='John') }}">Página de inicio con nombre</a></li>
+        <li><a href="{{ url_for('tuberias') }}">Página de tuberías</a></li>
+    </ul>
+    
+    <p>Enlace personalizado:</p>
+    <ul>
+        <li><a href="{{ url_for('static', filename='archivo.txt') }}">Enlace a un archivo estático</a></li>
+    </ul>
+</body>
+
+{% endblock %}
+</html>
+
+
+
+
+
+

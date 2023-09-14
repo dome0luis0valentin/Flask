@@ -1,0 +1,43 @@
+/* Estilos para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el encabezado */
+h1 {
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilos para la lista */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Estilos para los enlaces de la lista */
+ul li a {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para los enlaces personalizados */
+.custom-link {
+    color: #e74c3c;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.custom-link:hover {
+    color: #c0392b;
+}
+
